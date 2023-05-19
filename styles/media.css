@@ -1,0 +1,215 @@
+@media (max-width:430px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container {
+        max-width: 426px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    /* header */
+
+    .header__menu {
+        display: block;
+    padding: 15px 0; /* так как сам логотип окружен отступом */
+    }
+    .header {
+        display: none;
+    }
+
+
+    /* main */
+    .main {
+        background-color: #010405;
+    }
+    .main__header-mobile {
+        display: block;
+    }
+    .main__wrap-header {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 23px;
+    }
+    .main__wrapper {
+        padding: 58px 0 165px;
+    }
+    .main__advantages {
+       flex-direction: column;
+    }
+    .main__advantage {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .main__button {
+        width: 100%;
+    }
+    .main__title {
+        font-size: 72px;
+        line-height: 87px;
+        position: relative;
+    }
+    .main__title::after {
+        content: "";
+        height: 1px;
+        width: 170.24px;
+        background-color: #D1FF5D;
+        bottom: 0;
+        z-index: 1;
+        position: absolute;
+        left: 30%;
+        
+    }
+    .main__subline {
+        display: none;
+        
+
+    }
+    .main__subtitle {
+        margin: 41px 0 57px;
+    }
+
+    /* about */
+    .about__wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 51px 20px 20px;
+        align-items: end
+    }
+    .about__wrapper::before {
+        font-weight: 600;
+font-size: 114px;
+line-height: 117px;
+top: 0;
+left: -10%;
+    }
+    .about__info {
+        max-width: 100%;
+    }
+    .about__title {
+        max-width: 238.91px;
+        font-size: 70px;
+line-height: 60px;
+margin-bottom: 40px;
+    }
+    .about__desc {
+        max-width: 100%;
+        font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+    }
+    .about__line {
+        border: none;
+        background-color: transparent;
+    }
+    .about__images {
+        width: 82%;
+        padding-top: 43px;
+        height: 410px; 
+    }
+    .about__image-small {
+        height: 221.05px;
+        width: 109%;
+    }
+    .about__image {
+        padding: 9px;
+    }
+    .about__image-big {
+        height: 245.23px;
+    }
+    .about__shadow {
+        width: 30%;
+        height: 56px;
+        position: absolute;
+        top: 70%;
+        left: 15%;
+
+    }
+
+    /* process */
+    .process__wrapper {
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 120px 0 65px;
+        background-size: contain;
+        align-items: flex-start;
+    }
+    .process__wrapper::before {
+        width: 208px;
+        height: 301px;
+        top: 10%;
+        left: 10%;
+        background-size: contain;
+        filter: blur(1px);
+
+    }
+    .process__abstract {
+        width: 100%;
+        height: 641px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .process__abstract {
+        width: 100%;
+        height: 641px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .process__name {
+        width: 95%;
+        height: 242px;
+        background: rgba(255, 255, 255, 0.06);
+        backdrop-filter: blur(10.1395px);
+        border-radius: 10px;
+        padding: 31px 45px 24px 33px;
+        border-radius: 5px;
+        margin-bottom: 49px;
+    }
+    .process__title {
+        font-weight: 600;
+font-size: 40px;
+line-height: 50px;
+    }
+    .process__stages {
+        width: 100%;
+        grid-template-columns: 49px 311px;
+        grid-template-rows: repeat(4, 124px);
+        grid-row-gap: 40px;
+        grid-column-gap: 14px;
+        margin-left: 34px;
+    }
+
+    .process__icon {
+        width: 49px;
+        height: 49px;
+
+    }
+    .process__caption {
+        font-size: 24px;
+        line-height: 16.64px;
+    }
+    .process__text {
+        font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    }
+    .process__number {
+    font-size: 26px;
+    line-height: 49px;
+    }
+    .process__icon::after {
+        content: "";
+        background-image: url(../images/Regular.png);
+        width: 69px;
+        height: 73px;
+        position: absolute;
+        bottom: -84px;
+        left: 45%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
