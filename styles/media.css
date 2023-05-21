@@ -28,6 +28,9 @@
     .main {
         background-color: #010405;
     }
+    .main__button {
+        display: block;
+    }
 
     .main__header-mobile {
         display: block;
