@@ -49,18 +49,18 @@
                         <img src="./images/logo-mob.png" alt="логотип компании">
                     </div>
 
-                    <div class="header__wrapper-mobile">
-                        <div class="header__menu">
+                    <div class="main__wrap-mobile">
+                        <div class="main__menu">
                             <input id="menu" type="checkbox" />
                             <label class="menu__btn" for="menu">
                                 <span></span>
                             </label>
-                            <ul class="menu__box">
-                                <li class="center"><a class="header__link-mobile" href="#about">About us</a></li>
-                                <li class="center"><a class="header__link-mobile" href="#process">Discover jobs</a></li>
-                                <li class="center"><a class="header__link-mobile" href="#countries">Countries</a></li>
-                                <li class="center"><a class="header__link-mobile" href="#blog">Blog</a></li>
-                                <li class="center"><a class="header__link-mobile" href="#contact">Contact us</a></li>
+                            <ul class="main__box">
+                                <li class="header__link-mobile"><a href="#about">About us</a></li>
+                                <li class="header__link-mobile"><a href="#process">Discover jobs</a></li>
+                                <li class="header__link-mobile"><a href="#countries">Countries</a></li>
+                                <li class="header__link-mobile"><a href="#blog">Blog</a></li>
+                                <li class="header__link-mobile"><a href="#contact">Contact us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                     <div class="main__advantage-cost main__advantage">
                         <div class="main__icon">
                             <img src="./images/main__icon-cost.png" alt="cost savings icon">
-                        </div>
+                        </div> 
                         <p class="main__text">Cost Savings</p>
                     </div>
                     <div class="main__advantage-talent main__advantage">
@@ -384,35 +384,10 @@
             </div>
     </footer>
 
+
     <script src="./scripts/jquery-1.9.1.min.js"></script>
     <script src="./scripts/owl.carousel.min.js"></script>
-    <script>
-        $(document).ready(function(){
-  $(".owl-carousel").owlCarousel({
-    items: 5,
-    loop: true,
-    autoWidth:true,
-    margin: 70,
-    autoplay: true,
-    dots: false,
-    slideTransition: 'linear',
-    autoplayTimeout: 4000,
-    autoplaySpeed: 4000,
-    autoplayHoverPause: false,
-    responsive: {
-        0:{
-          items: 1
-        },
-        430:{
-          items: 2
-        },
-        1300: {
-            items: 4
-        }
-    }
-  });
-});
-    </script>
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>

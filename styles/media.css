@@ -28,9 +28,7 @@
     .main {
         background-color: #010405;
     }
-    .main__button {
-        display: block;
-    }
+
 
     .main__header-mobile {
         display: block;
@@ -45,7 +43,7 @@
     }
 
     .main__wrapper {
-        padding: 58px 0 165px;
+        padding: 58px 0;
     }
     .main__logo {
         width: 127px;
@@ -54,6 +52,8 @@ height: 85.77px;
     .main__logo img {
         width: 100%;
         height: 100%;
+        object-fit: cover;
+
     }
 
 
@@ -61,13 +61,13 @@ height: 85.77px;
     .header__wrapper {
         position: relative;
     }
-    .header__wrapper-mobile {
+    .main__wrap-mobile{
         display: block;
     }
     .header__nav {
         display: none;
     }
-    .header__menu {
+    .main__menu {
         overflow: hidden;
     }
     #menu {
@@ -101,7 +101,7 @@ height: 85.77px;
     content: '';
     top: 8px;
     }
-    .menu__box {
+    .main__box {
         display: none;
         justify-content: space-between;
         visibility: hidden;
@@ -117,20 +117,16 @@ height: 85.77px;
 
       }
       /* элементы меню */
-      .header__link-mobile{
-        display: block;
+      .header__link-mobile {
+        justify-content: center;
         width: 144px;
         text-decoration: none;
         align-items: center;
-        margin-bottom: 20px;
         font-weight: 400;
-font-size: 20px;
-border-bottom: 1px solid #D1FF5D;
-line-height: 27px;
-      }
-      .center {
-        display: flex;
-        justify-content: center;
+        font-size: 20px;
+        border-bottom: 1px solid #D1FF5D;
+        line-height: 27px;
+        margin: 0 auto 20px;
 
       }
       /* .header__link:hover {
@@ -147,7 +143,7 @@ line-height: 27px;
         top: 0;
         transform: rotate(90deg);
       }
-      #menu:checked ~ .menu__box {
+      #menu:checked ~ .main__box {
         visibility: visible;
         display: block;
       }
@@ -173,11 +169,14 @@ line-height: 27px;
 
     .main__button {
         width: 100%;
+        display: block;
+
     }
 
     .main__title {
         font-size: 72px;
         line-height: 87px;
+        position: relative;
     }
 
     .main__title::after {
@@ -191,6 +190,7 @@ line-height: 27px;
         left: 30%;
 
     }
+
 
     .main__subline {
         display: none;
@@ -506,6 +506,8 @@ height: 129.66px;
     .footer__logo img{
         width: 100%;
         height: 100%;
+        object-fit: cover;
+
     }
     .footer__content-right {
         width: 100%;
