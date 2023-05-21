@@ -55,9 +55,17 @@ body {
     display: flex;
     justify-content: space-between;
 }
-.header__menu {
-    display: none;
+.header__logo {
+    width: 167px;
+    height:104px;
 }
+.header__logo img {
+    width: 100%;
+    height: 100%;
+}
+/* .header__menu {
+    display: none;
+} */
 
 .header__navbar {
     display: flex;
@@ -107,7 +115,9 @@ body {
     background-color: #D1FF5D;
     color: #000000;
 }
-
+.header__wrapper-mobile {
+    display: none;
+}
 /* main */
 .main__header-mobile {
     display: none;
@@ -152,6 +162,7 @@ body {
     margin:41px 0 85px;
 }
 
+
 .main__advantages {
     display: flex;
     justify-content: space-between;
@@ -167,6 +178,9 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 14px 0 8px;
+}
+.main__button {
+    display: none;
 }
 
 .main__icon {
@@ -418,7 +432,6 @@ body {
     font-weight: 800;
     font-size: 180px;
     line-height: 160px;
-    text-align: right;
     text-transform: uppercase;
     color: #0D2228;
     background-color: rgba(255, 255, 255, 0.2);
@@ -483,7 +496,7 @@ body {
     width: 100%;
     height: 430px;
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10.1395px);
+    filter: blur(4px);
     border-radius: 15.1075px;
     position: absolute;
     bottom: -26px;
@@ -504,13 +517,11 @@ body {
 }
 
 /* countries */
-.countries {
-    background: linear-gradient(180deg, #FFFFFF 0%, #DFFFF7 100%);
-}
 
 .countries__wrapper {
-    padding: 64px 0 0;
+    padding: 64px 0 78px;
     position: relative;
+    background: linear-gradient(180deg, #FFFFFF 0%, #DFFFF7 100%);
 }
 
 .countries__title {
@@ -522,18 +533,19 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #05664F;
+    margin-left: 152px;
 }
 
 .countries__map {
-    z-index: 1;
-    height: 750px;
+    width: 100%;
+    height: 673px;
 
 }
 
 .countries__image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .countries__list {
@@ -542,14 +554,12 @@ body {
     background: #FFFFFF;
     box-shadow: 0px 20px 30px -16px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-
     display: flex;
     justify-content: space-around;
     padding: 33px 0 32px;
-
     position: absolute;
-    bottom: 270px;
-    left: -100px;
+    bottom: 31%;
+    left: 2%;
 
 }
 
@@ -566,45 +576,31 @@ body {
     height: 40px;
     background-color: #D1FF5D;
     border-radius: 16px;
-
     position: absolute;
-    bottom: 510px;
-    left: 155px;
-
     padding: 6px 10px;
 }
 
-.europe {
+.countries__america {
+    top: 39%;
+    left: 22%;
+}
+
+.countries__europe {
     top: 28%;
-    left: 47%;
+    left: 47.5%;
 
 }
 
-.africa {
-    top: 48%;
+.countries__africa {
+    top: 45%;
     left: 45%;
 }
 
-.asia {
-    top: 44%;
-    left: 76%;
+.countries__asia {
+    top: 42%;
+    left: 67%;
 }
-
-.countries__tag::after {
-    content: "";
-    background-image: url(../images/Arrow.png);
-    width: 26px;
-    height: 18px;
-
-    position: absolute;
-    bottom: -33px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.countries__america {
+.countries__tag p {
     font-weight: 600;
     font-size: 20px;
     line-height: 28px;
@@ -612,6 +608,19 @@ body {
     align-items: center;
     letter-spacing: 0.15px;
     color: #05664F;
+}
+
+.countries__tag::after {
+    content: "";
+    background-image: url(../images/Arrow.png);
+    width: 26px;
+    height: 18px;
+    position: absolute;
+    bottom: -33px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /* partners */
@@ -689,28 +698,29 @@ body {
 }
 
 .partner__abstract_top {
-    width: 772.66px;
-    height: 466.49px;
     position: absolute;
-    top: -44%;
+    top: -55%;
     right: -12%;
     z-index: -1;
 }
 
+
 .partner__abstract_top img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-
+    object-fit: cover;
 }
 
 .partner__abstract_bot {
-    width: 770.49px;
-    height: 462.19px;
     position: absolute;
     z-index: -1;
-    bottom: -3%;
+    bottom: -61%;
     left: 0%;
+}
+.partner__abstract_bot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* footer */
@@ -730,6 +740,14 @@ body {
     width: 541px;
     justify-content: space-between;
     align-items: center;
+}
+.footer__logo {
+    width: 308px;
+height: 192px;
+}
+.footer__logo img {
+    width: 100%;
+    height: 100%;
 }
 
 .footer__links {
